@@ -1,1 +1,25 @@
+Storia:
 
+Inizio:
+
+Combattimenti:
+  I combattimenti seguiranno un sistema simile alla morra cinese:
+    -Vite: I due partecipanti allo scontro avranno un certo numero di vite, il giocatore di base ne ha 5(incrementabili o decrementabili durante il gioco)
+      l'avversario ne avrà un numero che può variare in base al tipo di nemico.
+    -Mossa: Ad ogni turno il giocatore sceglierà una delle 3 azioni disponibili:
+        
+        Attacco da vicino: Efficace contro l'attacco da lontano, debole alla parata.
+          In caso si scontrino due attacchi da vicino entrambi perderanno una vita.
+        
+        Attacco a distanza:  Efficace contro la parata, debole contro l'attacco da vicino.
+          In caso si scontrino due attacchi da distanza verrà casualmente deciso chi prende danno.
+        
+        Parata: Efficace contro l'attacco da vicino, debole contro l'attacco a distanza.
+          In caso si scontrino due parate nessuno prende danno.
+      
+
+      Il nemico sceglierà(generata casualmente) una mossa e in base al esito dello scontro verrà tolta una vita al perdente.
+    
+    -Morte: In caso di morte il gioco farà tornare il giocatore alla pagina iniziare ricominciando l'avventura,
+      in alternativa si può ricaricare la pagina per "save-scummare" il gioco.
+    
