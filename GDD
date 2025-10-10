@@ -1,0 +1,53 @@
+Storia:
+
+Inizio:
+
+Luoghi importanti:
+  -Statua: Se il giocatore entra in una certa stanza contentente una statua e ci interagisce quando affronta e sconfigge il minotauro avverrà la Bad Ending.
+  -Strada Segreta: Ad un certo punto del inferno l'eroe si imbatterà in una parte che sembrerà "glitchata",
+    se ci interagisce riuscirà a finire nel mondo informatico.
+  -Bivio di accesso al inferno:
+  -Scala verso il DDD:
+  -Ingresso del Dungeon:
+
+Finali:
+  -TRUE ENDING: L'eroe affronta le fiamme e i demoni infernali e trova la sua amata, la quale lo ricompensa per averla salvata con un bacio,
+    prima di fuggire insieme verso un lieto fine
+  -GOOD ENDING: L'eroe sconfigge il minotauro e libera tutti gli schiavi del Dungeon, tranne la sua amata, che pare scomparsa.
+  -BAD ENDING: L'eroe ha toccato la statua durante la sua avventura, questo permette al Minotauro un ultimo subdolo attacco,
+    che gli permette di prendere il controllo del suo corpo tramite un incantesimo.
+  -HERO ENDING: L'eroe decide di andare a affrontare il malvagio DDD(Dio Del Dungeon) per liberare tutti i prigionieri e sconfiggere per sempre il male,
+    tuttavia non è abbastanza forte da sconfiggere il boss e muore eroicamente.
+  -GOD ENGING: L'eroe decide di andare a affrontare il malvagio DDD(Dio Del Dungeon) per liberare tutti i prigionieri e sconfiggere per sempre il male,
+    stranamente riesce a sconfiggere il boss e ottiene il potere di un Dio.
+  -COWARD ENDING: L'eroe al inizio del viaggio ha troppa paura per entrare nel dungeon e decide di fuggire come un codardo.
+  -DIG DUG ENDING: L'eroe dopo aver affrontato il programmatore del dungeon prova a frugare nel suo computer per trovare il file contenente la sua amata,
+    la fallimentare ricerca lo fa finire al interno di Dig Dug.
+  -WHATSAPP HALF-LIFE ENDING: L'eroe dopo aver affrontato il programmatore del dungeon prova a frugare nel suo computer per trovare il file contenente la sua amata,
+    al posto di essa però trova il Sig. Half Life WhatsApp.
+  -GITHUB ENDING: L'eroe ha sconfitto il programmatore e ha capito di essere in un gioco, tale illuminazione lo porta a voler scoprire di più sulla realtà in cui vive,
+    per fare ciò egli entra dentro i server di GitHub e viaggia dentro le repository per scoprire di più sulla realtà informatica.
+  -LINUX ENDING: L'eroe ha sconfitto il programmatore e ha capito di essere in un gioco, tale rivelazione lo sconvolge e, in preda alla confusione,
+    decide di usare il PC del programmatore (con Arch Linux) per creare un mondo a suo piacimento, dove lui può essere un dio del informatica. 
+
+Combattimenti:
+  I combattimenti seguiranno un sistema simile alla morra cinese:
+    -Vite: I due partecipanti allo scontro avranno un certo numero di vite, il giocatore di base ne ha 5(incrementabili o decrementabili durante il gioco)
+      l'avversario ne avrà un numero che può variare in base al tipo di nemico.
+    -Mossa: Ad ogni turno il giocatore sceglierà una delle 3 azioni disponibili:
+        
+        Attacco da vicino: Efficace contro l'attacco da lontano, debole alla parata.
+          In caso si scontrino due attacchi da vicino entrambi perderanno una vita.
+        
+        Attacco a distanza:  Efficace contro la parata, debole contro l'attacco da vicino.
+          In caso si scontrino due attacchi da distanza verrà casualmente deciso chi prende danno.
+        
+        Parata: Efficace contro l'attacco da vicino, debole contro l'attacco a distanza.
+          In caso si scontrino due parate nessuno prende danno.
+      
+
+      Il nemico sceglierà(generata casualmente) una mossa e in base al esito dello scontro verrà tolta una vita al perdente.
+    
+    -Morte: In caso di morte il gioco farà tornare il giocatore alla pagina iniziare ricominciando l'avventura(tranne in alcuni casi),
+      in alternativa si può ricaricare la pagina per "save-scummare" il gioco.
+    
