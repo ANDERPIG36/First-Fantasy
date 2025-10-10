@@ -3,6 +3,12 @@ Storia:
 Inizio:
 
 Luoghi importanti:
+  -Statua: Se il giocatore entra in una certa stanza contentente una statua e ci interagisce quando affronta e sconfigge il minotauro avverrà la Bad Ending.
+  -Strada Segreta: Ad un certo punto del inferno l'eroe si imbatterà in una parte che sembrerà "glitchata",
+    se ci interagisce riuscirà a finire nel mondo informatico.
+  -Bivio di accesso al inferno:
+  -Scala verso il DDD:
+  -Ingresso del Dungeon:
 
 Finali:
   -TRUE ENDING: L'eroe affronta le fiamme e i demoni infernali e trova la sua amata, la quale lo ricompensa per averla salvata con un bacio,
@@ -19,8 +25,10 @@ Finali:
     la fallimentare ricerca lo fa finire al interno di Dig Dug.
   -WHATSAPP HALF-LIFE ENDING: L'eroe dopo aver affrontato il programmatore del dungeon prova a frugare nel suo computer per trovare il file contenente la sua amata,
     al posto di essa però trova il Sig. Half Life WhatsApp.
-  -GITHUB ENDING:
-  -LINUX ENDING:
+  -GITHUB ENDING: L'eroe ha sconfitto il programmatore e ha capito di essere in un gioco, tale illuminazione lo porta a voler scoprire di più sulla realtà in cui vive,
+    per fare ciò egli entra dentro i server di GitHub e viaggia dentro le repository per scoprire di più sulla realtà informatica.
+  -LINUX ENDING: L'eroe ha sconfitto il programmatore e ha capito di essere in un gioco, tale rivelazione lo sconvolge e, in preda alla confusione,
+    decide di usare il PC del programmatore (con Arch Linux) per creare un mondo a suo piacimento, dove lui può essere un dio del informatica. 
 
 Combattimenti:
   I combattimenti seguiranno un sistema simile alla morra cinese:
@@ -40,6 +48,6 @@ Combattimenti:
 
       Il nemico sceglierà(generata casualmente) una mossa e in base al esito dello scontro verrà tolta una vita al perdente.
     
-    -Morte: In caso di morte il gioco farà tornare il giocatore alla pagina iniziare ricominciando l'avventura,
+    -Morte: In caso di morte il gioco farà tornare il giocatore alla pagina iniziare ricominciando l'avventura(tranne in alcuni casi),
       in alternativa si può ricaricare la pagina per "save-scummare" il gioco.
     
