@@ -1,6 +1,36 @@
 Storia:
-
+  Il giocatore impersona un eroe la cui amata è stata rapita da un orda di mostri che l'hanno portata al interno di un dungeon come prigioniera.
+  L'eroe deciderà quindi di andare a salvarla al interno del dungeon. 
+  La storia si ramifica portando a diversi eventi e finali:
+    -Ingresso Dungeon: Da qui l'eroe potrà scegliere se:
+      -Entrare nel Dungeon: L'eroe entra nel dungeon e si trova davanti al primo bivio con due strade:
+        -Inferno: Qui l'eroe affronta con coraggio vari nemici per ritrovare la sua amata.
+          Qui potrebbe imbattersi in:
+            -Mondo Informatico: Una strada apparentemente buggata che gli permette di arrivare al mondo informatico che contiene:
+              -Boss Programmatore:
+              -Boss Unemployed:
+            -Vita Extra: Dopo uno degli scontri l'eroe ottiene una vita extra.
+            -Boss Infernale: Se prosegue lungo l'inferno incontrerà il Boss dell' inferno che una volta sconfitto gli farà accedere alla True Ending.
+        -Dungeon: Qui l'eroe affronta con coraggio vari nemici per liberare i vari prigionieri. Girando nel Dungeon potrebbe imbattersi in:
+          -Scale per il DDD: Una scala che porta verso il DDD,
+          -Statua (Bad Ending):
+          -Minotauro:
+      -Fuggire: Vedi COWARD ENDING.
+    
 Inizio:
+
+Struttura delle stanze:
+  -Spostamenti: La stanza sarà strutturata in uno sfondo, il giocatore(cursore) e la/le porte/passaggi per spostarsi di luogo
+    ed eventuali oggetti chiave/interagibili.
+  -Combattimenti: Quando il giocatore entra in una stanza o inetagisce con determinati oggetti chiave parte un animazione e successivamente lo schermo cambia,
+    mostrando la schermata di battagia composta da:
+      -Immagini dei personaggi combattenti.
+      -Vite dei personaggi combattenti.
+      -3 tasti di azione per ogni attacco.
+      -Tasto SALTA BATTAGLIA.
+      -Eventuali tasti speciali.
+  -Testi: Nel lato destro dello schermo c'è un riquadro dove appaiono le varie scritte di descrizioni eventi/ dialoghi personaggi.
+  -Cursore: Il cursore appare come l'eroe del gioco, dando l'effetto del personaggio che si muove nel dungeon.
 
 Luoghi importanti:
   -Statua: Se il giocatore entra in una certa stanza contentente una statua e ci interagisce quando affronta e sconfigge il minotauro avverrà la Bad Ending.
