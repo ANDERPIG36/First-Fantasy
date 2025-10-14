@@ -2,7 +2,7 @@
 body.menu-bg {
   margin: 0;
   height: 100vh; /* prende tutta l’altezza della finestra */
-  background-image: url("../images/sfondo_menu.jpg"); /* percorso dello sfondo */
+  background-image: url("../img/sfondo_menu.png"); /* percorso dello sfondo */
   background-size: cover; /* l’immagine copre tutto lo schermo */
   background-position: center; /* centrata */
   display: flex;
