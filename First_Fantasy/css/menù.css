@@ -1,32 +1,30 @@
-/* Rimuove margini predefiniti e imposta lo sfondo */
+
 body.menu-bg {
   margin: 0;
-  height: 100vh; /* prende tutta l’altezza della finestra */
-  background-image: url("../img/sfondo_menu.png"); /* percorso dello sfondo */
-  background-size: cover; /* l’immagine copre tutto lo schermo */
-  background-position: center; /* centrata */
+  height: 100vh;
+  background-image: url("../img/sfondo_menu.png"); 
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center; /* centra orizzontalmente */
-  align-items: center; /* centra verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
-/* Contenitore dei pulsanti */
 .menu-container {
   display: flex;
-  flex-direction: column; /* bottoni uno sopra l’altro */
+  flex-direction: column; 
   align-items: center;
-  gap: 30px; /* spazio tra i pulsanti */
+  gap: 30px; 
 }
 
-/* Pulsanti del menu (le immagini) */
 .menu-button {
-  width: 250px; /* dimensione delle immagini pulsante */
+  width: 250px; 
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* Effetto quando passi sopra */
+/*cursore su bottone*/
 .menu-button:hover {
-  transform: scale(1.1); /* leggero zoom */
-  filter: brightness(1.2); /* le rende più chiare */
+  transform: scale(1.1); /*zoom*/
+  filter: brightness(1.2); /*schiarisce il bottone*/
 }
