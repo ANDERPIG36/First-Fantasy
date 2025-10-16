@@ -44,7 +44,7 @@ html, body {
     background-position: center;
 }
 
-#start_img {
+img {
     width: auto;
     object-fit: contain;
     transition: all 0.5s ease;

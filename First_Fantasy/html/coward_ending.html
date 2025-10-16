@@ -1,6 +1,11 @@
 <!--L'eroe non ha il coraggio di entrare nel dungeon e se ne va con la coda tra le gambe,
 mentre fugge come un codardo a diversi pensieri di disprezzo verso se stesso,
-dopodichè vive una vita solitaria tra rimorsi e delusioni.-->
+dopodichè vive una vita solitaria tra rimorsi e delusioni.
+
+Immagine 1: Suono dal Dungeon
+Immagine 2: Mostro che esce dal Dungeon
+Immagine 3: Eroe in fuga
+Immagine 4: Eroe tristemente seduto sotto un albero-->
 
 <!DOCTYPE html>
 <html lang="it">
@@ -8,13 +13,25 @@ dopodichè vive una vita solitaria tra rimorsi e delusioni.-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>First Fantasy</title>
-        <link rel="stylesheet" href="../css/coward_ending.css">
+        <link rel="stylesheet" href="../css/events.css">
     </head>
     <body>
-        <img id="coward_ending_img" src="../img/coward_ending_1.png" alt="img1">
+        <img id="coward_ending_img" src="../img/endings/coward/coward_1.png" class="base_size">
 
         <div id="text-box" class="hidden">
             <p id="monologue_text"></p>
+
+            <div id="button-box" class="hidden">
+                <a href="start.html">
+                    <img src="../img/buttons/bottone_verde.png" class="menu-button">
+                    <h1>GIOCA ANCORA</h1>
+                </a>
+
+                <a href="https://github.com/ANDERPIG36/First-Fantasy" target="_blank">
+                    <img src="../img/buttons/bottone_blu.png" class="menu-button">
+                    <h1>CREDITI</h1>
+                </a>
+            </div>
         </div>
 
         <script src="../js/coward_ending.js"></script>
