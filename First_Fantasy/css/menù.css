@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'ByteBounce';
+  src: url('../asset/fonts/ByteBounce.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'ByteBounce', sans-serif;
+  font-size: 64px;
+  color: red;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
 
 body.menu-bg {
   margin: 0;
@@ -14,14 +31,24 @@ body.menu-bg {
   display: flex;
   flex-direction: column; 
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
 }
 
-.menu-button {
+.img-button {
   width: 250px; 
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
+
+.button {
+  display: grid;
+  place-items: center;
+}
+
+.button > * {
+  grid-area: 1 / 1;
+}
+
 
 /*cursore su bottone*/
 .menu-button:hover {

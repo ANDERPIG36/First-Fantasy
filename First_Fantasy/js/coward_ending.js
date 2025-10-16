@@ -1,13 +1,12 @@
-const immagini = ["../img/start_1.png", "../img/start_2.png", "../img/start_3.png", "../img/start_4.png"];
+const immagini = [];
 let i = 0;
 let j = -1;
 let monologues = [];
-const img = document.getElementById("start_img");
+const img = document.getElementById("coward_ending_img");
 const textBox = document.getElementById("text-box");
-const buttonBox = document.getElementById("button-box");
 const monologueText = document.getElementById("monologue_text");
 
-fetch('../txt/start.json')
+fetch('../txt/coward_ending.json')
     .then(response => response.json())
     .then(data => {
         monologues = data.monologues;
@@ -26,7 +25,7 @@ img.addEventListener("click", () => { //Quando clicci sull' pulsante avvia una f
             textBox.classList.remove("hidden");
             monologueText.textContent = monologues[j];
         } else {
-            buttonBox.classList.remove("hidden");
+
         }
     }
 });
