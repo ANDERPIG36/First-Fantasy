@@ -16,7 +16,7 @@ fetch('../txt/start.json')
         console.error('Errore nel caricamento dei testi', error);
     });
 
-document.body.addEventListener("click", () => { //Quando clicci sull' pulsante avvia una funzione "monouso" creata sul momento che porta al avanzamento delle immagini e smette di esistere appena finisce la funzione
+document.body.addEventListener("click", () => { //Quando clicci sullo schermo avvia una funzione "monouso" creata sul momento che porta al avanzamento delle immagini e smette di esistere appena finisce la funzione
     i++;
     if (i < immagini.length) {
         img.src = immagini[i];

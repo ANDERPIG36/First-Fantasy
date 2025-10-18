@@ -48,6 +48,12 @@ html, body {
     background-image: url("../img/bg/brick_bg.png");
     background-size: cover;
     background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.stanza > * {
+    grid-area: 1 / 1;
 }
 
 .GUI {
@@ -68,11 +74,10 @@ html, body {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    
 }
 
 .personaggio {
-
+    width: 16vw;
 }
 
 .button-box {
@@ -84,3 +89,16 @@ html, body {
 .bottone > * {
     width: 90%;
 }
+
+.porta img {
+    height: 20vh;
+}
+
+.mappa_stanza {
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+

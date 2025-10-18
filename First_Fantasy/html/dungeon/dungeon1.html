@@ -5,34 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>First Fantasy - Dungeon</title>
         <link rel="stylesheet" href="../../css/dungeon.css">
+        <style>
+            #porte_dungeon1{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+            }
+            #oggetti_stanza_dungeon1{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+        </style>
     </head>
     <body>
         <div id="pagina_dungeon1" class="pagina">
             <div id="stanza_dungeon1" class="stanza">
                 
-                <img src="../../img/maps/">
+                <img src="../../img/maps/mappa_dungeon1.png" class="mappa_stanza">
 
-                <img src="../../img/characters/">
+                <div id="oggetti_stanza_dungeon1" class="oggetti_stanza">
 
-                <a href="">
-                    <img src="../../img/decorations/">
-                </a>
+                    <div id="porte_dungeon1">
+                        <a href="" class="porta">
+                            <img src="../../img/decorations/porta_inferno1.png">
+                        </a>
 
-                <a href="">
-                    <img src="../../img/decorations/">
-                </a>
+                        <a href="" class="porta">
+                            <img src="../../img/decorations/porta_dungeon1.png">
+                        </a>
 
-                <a href="">
-                    <img src="../../img/decorations/">
-                </a>
-                
+                        <a href="" class="porta">
+                            <img src="../../img/decorations/porta_dungeon2.png">
+                        </a>
+                    </div>
+
+                    <img src="../../img/characters/faces/charlotte_face.png">
+
+                </div>
+
             </div>
 
             <div id="GUI_dungeon1" class="GUI">
                     
                 <div id="text-box_dungeon1" class="text-box">
 
-                    <p id="dungeon1_text">bla bla prova</p>
+                    <p id="dungeon1_text"></p>
 
                 </div>
 
@@ -42,6 +61,7 @@
             
             </div>
         </div>
+        <script src="../../js/dungeon/dungeon1.js"></script>
     </body>
 </html>
 
