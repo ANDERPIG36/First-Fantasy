@@ -32,7 +32,7 @@ a {
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -51,15 +51,15 @@ img {
 }
 
 .base_size {
-    height: 100%;
+    height: 100vh;
 }
 
 .shrink1 {
-    height: 80%;
+    height: 80vh;
 }
 
 .shrink2 {
-    height: 70%;
+    height: 70vh;
 }
 
 #text-box {
@@ -68,18 +68,18 @@ img {
     background-position: center;
     border: calc(1vh) solid brown;
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
 }
 
 .box1{
-    height: 20%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box2{
-    height: 30%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;

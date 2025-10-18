@@ -7,7 +7,7 @@
 
 h1 {
     font-family: 'Pixel', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     color: white;
     text-align: center;
 }
@@ -19,9 +19,20 @@ p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+a > * {
+    grid-area: 1 / 1;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .pagina {
@@ -32,7 +43,7 @@ html, body {
 }
 
 .stanza {
-    width: 75%;
+    width: 75vw;
     height: 100vh;
     background-image: url("../img/bg/brick_bg.png");
     background-size: cover;
@@ -40,7 +51,7 @@ html, body {
 }
 
 .GUI {
-    width: 25%;
+    width: 25vw;
     height: 100vh;
     background-color: darkslategray;
     background-size: 100% 100%;
@@ -50,23 +61,26 @@ html, body {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 0px;
+    justify-content: space-between;
 }
 
-.text-box{
+.text-box {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 0px;
+    
 }
 
-.personaggio{
+.personaggio {
 
 }
 
-.button-box{
+.button-box {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center;
-    gap: 0px;
+}
+
+.bottone > * {
+    width: 90%;
 }
