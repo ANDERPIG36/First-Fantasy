@@ -5,9 +5,16 @@
   font-style: normal;
 }
 
+html{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+}
+
 h1 {
   font-family: 'Pixel', sans-serif;
-  font-size: 24px;
+  font-size: 1.6vw;
   color: red;
   text-align: center;
 }
@@ -31,11 +38,11 @@ body.menu-bg {
   display: flex;
   flex-direction: column; 
   align-items: center;
-  gap: 30px;
+  gap: 3vw;
 }
 
 .img-button {
-  width: 250px; 
+  width: 15vw; 
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -47,11 +54,4 @@ body.menu-bg {
 
 .button > * {
   grid-area: 1 / 1;
-}
-
-
-/*cursore su bottone*/
-.menu-button:hover {
-  transform: scale(1.1); /*zoom*/
-  filter: brightness(1.2); /*schiarisce il bottone*/
 }

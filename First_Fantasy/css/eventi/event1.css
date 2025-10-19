@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Pixel';
-    src: url('../asset/fonts/Pixel.ttf') format('truetype');
+    src: url('../../asset/fonts/Pixel.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 h1 {
     font-family: 'Pixel', sans-serif;
-    font-size: 26px;
+    font-size: 1.8vw;
     color: white;
     text-align: center;
 }
 
 p {
     font-family: 'Pixel', sans-serif;
-    font-size: 24px;
+    font-size: 1.8vw;
     color: black;
     text-align: center;
 }
@@ -25,8 +25,19 @@ a {
     place-items: center;
 }
 
+a > * {
+    grid-area: 1 / 1;
+}
+
 .hidden {
     display: none;
+}
+
+html{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
 }
 
 html, body {
@@ -39,7 +50,7 @@ html, body {
     flex-direction: column; 
     align-items: center;
     gap: 0px;
-    background-image: url("../img/bg/wooden_plank_bg.png");
+    background-image: url("../../img/bg/wooden_plank_bg.png");
     background-size: cover;
     background-position: center;
 }
@@ -47,7 +58,6 @@ html, body {
 img {
     width: auto;
     object-fit: contain;
-    transition: all 0.5s ease;
 }
 
 .base_size {
@@ -93,6 +103,6 @@ img {
     gap:10%;
 }
 
-a > * {
-    grid-area: 1 / 1;
+.img_button{
+    height: 15vh;
 }
