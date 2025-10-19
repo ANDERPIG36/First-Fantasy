@@ -1,4 +1,4 @@
-const immagini = ["../img/endings/coward/coward_1.png", "../img/endings/coward/coward_2.png", "../img/endings/coward/coward_3.png", "../img/endings/coward/coward_4.png"];
+const immagini = ["../../img/endings/coward/coward_1.png", "../../img/endings/coward/coward_2.png", "../../img/endings/coward/coward_3.png", "../../img/endings/coward/coward_4.png"];
 let i = 0;
 let j = -1;
 let monologues = [];
@@ -7,7 +7,7 @@ const textBox = document.getElementById("text-box");
 const buttonBox = document.getElementById("button-box");
 const monologueText = document.getElementById("monologue_text");
 
-fetch('../txt/coward_ending.json')
+fetch('../../txt/coward_ending.json')
     .then(response => response.json())
     .then(data => {
         monologues = data.monologues;
