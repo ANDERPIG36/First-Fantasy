@@ -16,7 +16,7 @@ Immagine 4: Eroe tristemente seduto sotto un albero-->
         <link rel="stylesheet" href="../../css/endings.css">
     </head>
     <body>
-        <img id="coward_ending_img" src="../../img/endings/coward/coward_1.png" class="base_size">
+        <img id="img" src="../../img/endings/coward/coward_1.png" class="base_size">
 
         <div id="text-box" class="hidden">
             <p id="monologue_text"></p>
@@ -34,6 +34,15 @@ Immagine 4: Eroe tristemente seduto sotto un albero-->
             </div>
         </div>
 
-        <script src="../../js/endings/coward_ending.js"></script>
+        <script>
+            const immagini = [
+            "../../img/endings/coward/coward_1.png",
+            "../../img/endings/coward/coward_2.png",
+            "../../img/endings/coward/coward_3.png",
+            "../../img/endings/coward/coward_4.png"
+            ];
+            const jsonPath = "../../txt/endings/coward_ending.json";
+        </script>
+        <script src="../../js/event1.js"></script>
     </body>
 </html>

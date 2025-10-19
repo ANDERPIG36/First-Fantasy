@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../asset/fonts/Pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Pixel', sans-serif;
+    font-size: 24px;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+a > * {
+    grid-area: 1 / 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 0px;
+}
+
+.stanza {
+    width: 75vw;
+    height: 100vh;
+    background-image: url("../img/bg/magma_bg.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.stanza > * {
+    grid-area: 1 / 1;
+}
+
+.GUI {
+    width: 25vw;
+    height: 100vh;
+    background-color: orangered;
+    background-size: 100% 100%;
+    background-position: center;
+    border: calc(1vh) solid red;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.personaggio {
+    width: 16vw;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.bottone > * {
+    width: 90%;
+}
+
+.porta img {
+    height: 20vh;
+}
+
+.mappa_stanza {
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Inferno</title>
+        <link rel="stylesheet" href="../../css/inferno.css">
+        <style>
+            #oggetti_stanza_inferno1{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+            #porte_inferno1{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                gap: 5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_inferno1" class="pagina">
+            <div id="stanza_inferno1" class="stanza">
+                
+                <img src="../../img/maps/mappa_inferno1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_inferno1" class="oggetti_stanza">
+
+                    <div id="porte_inferno1">
+                        
+                        <a href="../inferno/inferno5.html" class="porta">
+                            <img src="../../img/decorations/porta_inferno1.png">
+                        </a>
+
+                        <a href="../inferno/inferno2.html" class="porta">
+                            <img src="../../img/decorations/porta_inferno1.png">
+                        </a>
+
+                    </div>
+
+                    <img id="giocatore_inferno1" src="../../img/characters/faces/charlotte_face.png">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_inferno1" class="GUI">
+                    
+                <div id="text-box_inferno1" class="text-box">
+
+                    <p id="inferno1_text"></p>
+
+                </div>
+
+                <div id="personaggio_inferno1" class="personaggio">
+                        <img src="../../img/characters/faces/charlotte_face.png">
+                </div>
+            
+            </div>
+        </div>
+        
+        <script>
+            const personaggio = document.getElementById("giocatore_inferno1");
+            const monologueText = document.getElementById("inferno1_text");
+            const jsonPath = "../../txt/inferno/inferno1.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>

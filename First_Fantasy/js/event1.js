@@ -1,13 +1,12 @@
-const immagini = ["../img/start/start_1.png", "../img/start/start_2.png", "../img/start/start_3.png", "../img/start/start_4.png"];
 let i = 0;
 let j = -1;
 let monologues = [];
-const img = document.getElementById("start_img");
+const img = document.getElementById("img");
 const textBox = document.getElementById("text-box");
 const buttonBox = document.getElementById("button-box");
 const monologueText = document.getElementById("monologue_text");
 
-fetch('../txt/start.json')
+fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
         monologues = data.monologues;

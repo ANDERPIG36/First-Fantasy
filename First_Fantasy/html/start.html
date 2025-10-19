@@ -14,7 +14,7 @@ non entrare porta a coward_ending.html entrare porta alla prima stanza-->
         <link rel="stylesheet" href="../css/start.css">
     </head>
     <body>
-        <img id="start_img" src="../img/start/start_1.png" class="base_size">
+        <img id="img" src="../img/start/start_1.png" class="base_size">
 
         <div id="text-box" class="hidden">
             <p id="monologue_text"></p>
@@ -31,7 +31,15 @@ non entrare porta a coward_ending.html entrare porta alla prima stanza-->
                 </a>
             </div>
         </div>
-
-        <script src="../js/start.js"></script>
+        <script>
+            const immagini = [
+            "../img/start/start_1.png",
+            "../img/start/start_2.png",
+            "../img/start/start_3.png",
+            "../img/start/start_4.png"
+            ];
+            const jsonPath = "../txt/start.json";
+        </script>
+        <script src="../js/event1.js"></script>
     </body>
 </html>

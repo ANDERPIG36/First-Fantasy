@@ -1,5 +1,3 @@
-const personaggio = document.getElementById("giocatore_dungeon1");
-const monologueText = document.getElementById("dungeon1_text");
 const porte = document.querySelectorAll(".porta");
 let monologues = [];
 let i=-1;
@@ -8,7 +6,7 @@ porte.forEach(porta => {
     porta.style.pointerEvents = "none";
 });
 
-fetch('../../txt/dungeon/dungeon1.json')
+fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
         monologues = data.monologues;
