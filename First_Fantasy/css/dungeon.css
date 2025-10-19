@@ -102,3 +102,8 @@ html, body {
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
+
