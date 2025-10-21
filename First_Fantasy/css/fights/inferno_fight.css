@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../../asset/fonts/Pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    text-align: left;
+}
+
+p {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.8vw;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+a > * {
+    grid-area: 1 / 1;
+}
+
+html{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pagina {
+    height: 100vh;
+    background-image: url("../../img/battle_bg/hell_battle_bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 0px;
+}
+
+.salta-box{
+    padding: 8px;
+    margin: 8px;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.pulsante_salta {
+    height: 8vh;
+}
+
+.immagine_bottone_salta {
+    height: 8vh;
+}
+
+.battaglia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
