@@ -1,6 +1,7 @@
 const bottoniMossa = document.querySelectorAll(".bottone_mossa");
 const pulsanteAvanza = document.querySelector(".pulsante");
 const combattenteNemico = document.querySelector(".battaglia .combattente:first-child");
+const combattenteGiocatore = document.querySelector(".battaglia .combattente:last-child");
 
 let dialogues = [];
 let attacchi = [];
@@ -186,6 +187,7 @@ function mostraDialogoSuccessivo(e) {
         dialogueText.textContent = dialogues[i];
     } else {
         pulsanteAvanza.classList.remove("hidden");
+        textBox.classList.add("button-box");
         document.body.removeEventListener("click", mostraDialogoSuccessivo);
     }
 }
@@ -193,7 +195,7 @@ function mostraDialogoSuccessivo(e) {
 function sconfittaGiocatore() {
     battagliaAttiva = false;
     dialogueText.textContent = "Sei morto!";
-    combattenteNemico.classList.add("invisible");
+    combattenteGiocatore.classList.add("invisible");
     bottoniMossa.forEach(bottone => {
         bottone.style.pointerEvents = "none";
     });
@@ -204,6 +206,3 @@ function sconfittaGiocatore() {
 function paginaMorte() {
     window.location.href = "../../html/morte.html";
 }
-
-
-//risolvere nemico invisibile quando muori te

@@ -178,6 +178,9 @@ html, body {
     cursor: pointer;
 }
 
+.button-box{
+    height: 30vh;
+}
 
 .hidden {
     display: none;
