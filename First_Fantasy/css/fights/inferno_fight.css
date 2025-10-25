@@ -61,8 +61,8 @@ html, body {
 }
 
 .salta-box{
-    padding: 8px;
-    margin: 8px;
+    padding: 1vw;
+    margin: 1vw;
     width: 98vw;
     display: flex;
     flex-direction: row;
@@ -82,17 +82,111 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 5vw;
+}
+
+.combattente {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.immagine_combattente > * {
+    width: 25vw;
+}
+
+.GUI{
+    width: 50vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangolo_mosse{
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 25vw;
+    height: 50vh;
+    align-self: center;
+    background-image: url("../../img/GUI/triangolo_mosse.png");
+    background-size: 100% 100%;
+    background-position: center;
+    display: grid;
+    grid-template-areas:
+        ". spada ."
+        "scudo . arco";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.text-box{
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    height: 20vh;
+    background-color: firebrick;
+    background-size: 100% 100%;
+    background-position: center;
+    border: calc(1vh) solid maroon;
+    box-sizing: border-box;
+}
+
+.vite{
+    height: 10vh;
+    width: 20vw;
+    background-color: lemonchiffon;
+    background-size: 100% 100%;
+    background-position: center;
+    border: calc(1vh) solid crimson;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.vita{
+    width: 2.5vw;
+}
+
+.triangolo_mosse .spada {
+    grid-area: spada;
+}
+
+.triangolo_mosse .scudo {
+    grid-area: scudo;
+}
+
+.triangolo_mosse .arco {
+    grid-area: arco;
+}
+
+.azione{
+    width: 5vw;
+}
+
+.bottone_mossa {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 
-
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .invisible {
     visibility: hidden;
 }
 
-
+.text-box_button{
+    height: 30vh;
+}

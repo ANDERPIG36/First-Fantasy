@@ -25,4 +25,4 @@ document.body.addEventListener("click", () => {
             porta.style.pointerEvents = "auto";
         });
     }
-    });
+});
