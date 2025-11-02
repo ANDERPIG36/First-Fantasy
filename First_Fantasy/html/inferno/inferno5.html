@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Inferno</title>
+        <link rel="stylesheet" href="../../css/stanze/inferno.css">
+        <style>
+            #oggetti_stanza_inferno5{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+            #porte_inferno5{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                gap: 5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_inferno5" class="pagina">
+            <div id="stanza_inferno5" class="stanza">
+                
+                <img src="../../img/maps/mappa_inferno1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_inferno5" class="oggetti_stanza">
+
+                    <div id="porte_inferno5">
+                        
+                        <a href="../mondo_informatico/fight_informatico1.html" class="porta_buggata">
+                            <img src="volontariamente non trovato" alt="P̵͔̮͎͜͜͝Ơ̬̘͍̺͜͞͠͡R̷̵̞̮̲̟̕T͘͢͢͏̩͎̘̳A̢͜͏͉͙̤͟">
+                        </a>
+
+                        <a href="../inferno/boss_inferno.html" class="porta">
+                            <img src="../../img/decorations/porta_inferno_boss.png">
+                        </a>
+
+                    </div>
+
+                    <img id="giocatore_inferno5" src="../../img/characters/faces/charlotte_face.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_inferno5" class="GUI">
+                    
+                <div id="text-box_inferno5" class="text-box">
+
+                    <p id="inferno5_text"></p>
+
+                </div>
+
+                <div id="personaggio_inferno5" class="personaggio">
+                    <img src="../../img/characters/faces/charlotte_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+        
+        <script>
+            const personaggio = document.getElementById("giocatore_inferno5");
+            const monologueText = document.getElementById("inferno5_text");
+            const jsonPath = "../../txt/inferno/inferno5.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>

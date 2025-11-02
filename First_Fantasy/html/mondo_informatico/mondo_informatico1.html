@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F̵͔̮͎͜͜͝I̛̬̘͍̺͜͞͠͡R̷̵̞̮̲̟̕S͘͢͢͏̩͎̘̳T͘͢͢͏̩͎̘̳ F̵͔̮͎͜͜͝A̛̬̘͍̺͜͞͠͡N̷̵̞̮̲̟̕T͘͢͢͏̩͎̘̳A̢͜͏͉͙̤͟S͘͢͢͏̩͎̘̳Y̢͜͏͉͙̤͟?</title>
+        <link rel="stylesheet" href="../../css/stanze/mondo_informatico.css">
+        <style>
+            #oggetti_stanza_info1{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+            #porte_info1{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                gap: 5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_info1" class="pagina">
+            <div id="stanza_info1" class="stanza">
+                
+                <img src="../../img/maps/mappa_info1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_info1" class="oggetti_stanza">
+
+                    <div id="porte_info1">
+                        <a href="../mondo_informatico/fight_informatico2.html" class="porta">
+                            <img src="../../img/decorations/porta_info1.png">
+                        </a>
+
+                    </div>
+
+                    <img id="giocatore_info1" src="../../img/characters/faces/charlotte_face.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_info1" class="GUI">
+                    
+                <div id="text-box_info1" class="text-box">
+
+                    <p id="info1_text"></p>
+
+                </div>
+
+                <div id="personaggio_info1" class="personaggio">
+                    <img src="../../img/characters/faces/charlotte_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+        
+        <script>
+            const personaggio = document.getElementById("giocatore_info1");
+            const monologueText = document.getElementById("info1_text");
+            const jsonPath = "../../txt/mondo_informatico/info1.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>

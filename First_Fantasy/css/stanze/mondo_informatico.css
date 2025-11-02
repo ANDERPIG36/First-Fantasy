@@ -8,14 +8,14 @@
 h1 {
     font-family: 'Pixel', sans-serif;
     font-size: 1.8vw;
-    color: white;
+    color: lime;
     text-align: center;
 }
 
 p {
     font-family: 'Pixel', sans-serif;
     font-size: 1.8vw;
-    color: lightgoldenrodyellow;
+    color: lime;
     text-align: center;
 }
 
@@ -52,7 +52,7 @@ html, body {
 .stanza {
     width: 75vw;
     height: 100vh;
-    background-image: url("../../img/bg/magma_bg.png");
+    background-image: url("../../img/bg/bin_bg.png");
     background-size: cover;
     background-position: center;
     display: grid;
@@ -66,10 +66,10 @@ html, body {
 .GUI {
     width: 25vw;
     height: 100vh;
-    background-color: orangered;
+    background-color: black;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid red;
+    border: calc(1vh) solid lime;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 
@@ -132,5 +132,3 @@ html, body {
 .invisible {
     visibility: hidden;
 }
-
-

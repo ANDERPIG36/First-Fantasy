@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Inferno</title>
+        <link rel="stylesheet" href="../../css/stanze/inferno.css">
+        <style>
+            #oggetti_stanza_inferno2{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+            #porte_inferno2{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                gap: 5vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_inferno2" class="pagina">
+            <div id="stanza_inferno2" class="stanza">
+                
+                <img src="../../img/maps/mappa_inferno1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_inferno2" class="oggetti_stanza">
+
+                    <div id="porte_inferno2">
+                        <a href="../inferno/fight_inferno2.html" class="porta">
+                            <img src="../../img/decorations/porta_inferno1.png">
+                        </a>
+
+                    </div>
+
+                    <img id="giocatore_inferno2" src="../../img/characters/faces/charlotte_face.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_inferno2" class="GUI">
+                    
+                <div id="text-box_inferno2" class="text-box">
+
+                    <p id="inferno2_text"></p>
+
+                </div>
+
+                <div id="personaggio_inferno2" class="personaggio">
+                    <img src="../../img/characters/faces/charlotte_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+        
+        <script>
+            const personaggio = document.getElementById("giocatore_inferno2");
+            const monologueText = document.getElementById("inferno2_text");
+            const jsonPath = "../../txt/inferno/inferno2.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>
