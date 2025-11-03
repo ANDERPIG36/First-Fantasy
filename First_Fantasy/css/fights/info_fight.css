@@ -92,8 +92,18 @@ html, body {
     align-items: center;
 }
 
+.immagine_combattente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .immagine_combattente > * {
     width: 25vw;
+}
+
+.combattente_nemico{
+    width: 12vw;
 }
 
 .GUI{

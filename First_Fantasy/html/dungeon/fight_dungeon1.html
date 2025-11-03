@@ -1,0 +1,97 @@
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Dungeon</title>
+        <link rel="stylesheet" href="../../css/fights/dungeon_fight.css">
+    </head>
+    <body>
+        
+        <div class="pagina">
+
+            <div class="salta-box">
+                <a href="dungeon2.html" class="pulsante_salta">
+                    <img src="../../img/buttons/bottone_salta.png" class="immagine_bottone_salta">
+                    <h2>SALTA</h2>
+                </a>
+            </div>
+
+            <div class="battaglia">
+                
+                <div class="combattente">
+
+                    <div class="immagine_combattente">
+                        <img src="../../img/characters/enemies/goblin1.png" class="combattente_nemico">
+                        <p>Goblin</p>
+                    </div>
+
+                    <div class="vite">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita1_nemico">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita2_nemico">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita3_nemico">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita4_nemico">
+                    </div>
+
+                </div>
+
+                <div class="GUI">
+                    
+                    <div class="triangolo_mosse">
+                        <button class="bottone_mossa spada">
+                            <img src="../../img/GUI/spada.png" class="azione">
+                        </button>
+
+                        <button class="bottone_mossa scudo">
+                            <img src="../../img/GUI/scudo.png" class="azione">
+                        </button>
+                        
+                        <button class="bottone_mossa arco">
+                            <img src="../../img/GUI/arco.png" class="azione">
+                        </button>
+                    </div>
+
+                    <div id="textbox" class="text-box">
+                        <p id="testo"></p>
+                        <div class="button-box">
+                            <a href="dungeon2.html" class="pulsante hidden">
+                                <img src="../../img/buttons/bottone_blu.png" class="immagine_bottone">
+                                <h1>AVANZA</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="combattente">
+
+                    <div class="immagine_combattente">
+                        <img src="../../img/characters/faces/charlotte_face.png">
+                        <p>Zani2</p>
+                    </div>
+
+                    <div class="vite">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita1_giocatore">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita2_giocatore">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita3_giocatore">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita4_giocatore">
+                        <img src="../../img/GUI/vita.png" class="vita" id="vita5_giocatore">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            const dialogueText = document.getElementById("testo");
+            const textBox = document.getElementById("textbox");
+            const jsonPath = "../../txt/dungeon/fight_dungeon1.json";
+            const dialoghiIniziali = 4;
+            const viteInizialiGiocatore = 5;
+            const viteInizialiNemico = 4;
+        </script>
+
+        <script src="../../js/fight.js"></script>
+    </body>
+</html>
