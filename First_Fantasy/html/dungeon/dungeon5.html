@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Dungeon</title>
+        <link rel="stylesheet" href="../../css/stanze/dungeon.css">
+        <style>
+            #porte_dungeon5{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+            }
+            #oggetti_stanza_dungeon5{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+            #porta_scale{
+                height: 22.5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_dungeon5" class="pagina">
+            <div id="stanza_dungeon5" class="stanza">
+                
+                <img src="../../img/maps/mappa_dungeon1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_dungeon5" class="oggetti_stanza">
+
+                    <div id="porte_dungeon5">
+                        <a href="../dungeon/dungeon6.html" class="porta">
+                            <img src="../../img/decorations/porta_dungeon1.png">
+                        </a>
+
+                        <a href="../prigione/fight_prigione1.html" class="porta">
+                            <img src="../../img/decorations/porta_dungeon2.png">
+                        </a>
+
+                        <a href="../scale/scale1.html" class="porta">
+                            <img src="../../img/decorations/porta_scale.png" id="porta_scale">
+                        </a>
+                    </div>
+
+                    <img id="giocatore_dungeon5" src="../../img/characters/faces/charlotte_face.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_dungeon5" class="GUI">
+                    
+                <div id="text-box_dungeon5" class="text-box">
+
+                    <p id="dungeon5_text"></p>
+
+                </div>
+
+                <div id="personaggio_dungeon5" class="personaggio">
+                    <img src="../../img/characters/faces/charlotte_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            const personaggio = document.getElementById("giocatore_dungeon5");
+            const monologueText = document.getElementById("dungeon5_text");
+            const jsonPath = "../../txt/dungeon/dungeon5.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - Dungeon</title>
+        <link rel="stylesheet" href="../../css/stanze/dungeon.css">
+        <style>
+            #porte_dungeon6{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+            }
+            #oggetti_stanza_dungeon6{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_dungeon6" class="pagina">
+            <div id="stanza_dungeon6" class="stanza">
+                
+                <img src="../../img/maps/mappa_dungeon1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_dungeon6" class="oggetti_stanza">
+
+                    <div id="porte_dungeon6">
+                        <a href="../prigione/fight_prigione2.html" class="porta">
+                            <img src="../../img/decorations/porta_dungeon1.png">
+                        </a>
+                    </div>
+
+                    <img id="giocatore_dungeon6" src="../../img/characters/faces/charlotte_face.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_dungeon6" class="GUI">
+                    
+                <div id="text-box_dungeon6" class="text-box">
+
+                    <p id="dungeon6_text"></p>
+
+                </div>
+
+                <div id="personaggio_dungeon6" class="personaggio">
+                    <img src="../../img/characters/faces/charlotte_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            const personaggio = document.getElementById("giocatore_dungeon6");
+            const monologueText = document.getElementById("dungeon6_text");
+            const jsonPath = "../../txt/dungeon/dungeon6.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>
+
