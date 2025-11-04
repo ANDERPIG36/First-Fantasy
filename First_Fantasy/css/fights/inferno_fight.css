@@ -93,6 +93,10 @@ html, body {
 }
 
 .immagine_combattente > * {
+    width: 20vw;
+}
+
+.combattente_nemico{
     width: 25vw;
 }
 

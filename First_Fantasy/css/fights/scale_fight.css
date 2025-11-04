@@ -21,8 +21,8 @@ h2 {
 
 p {
     font-family: 'Pixel', sans-serif;
-    font-size: 1.5vw;
-    color: white;
+    font-size: 1.8vw;
+    color: black;
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ html, body {
 
 .pagina {
     height: 100vh;
-    background-image: url("../../img/battle_bg/dungeon_battle_bg.png");
+    background-image: url("../../img/battle_bg/blood_battle_bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,7 +103,7 @@ html, body {
 }
 
 .combattente_nemico{
-    width: 20vw;
+    width: 12vw;
 }
 
 .GUI{
@@ -139,20 +139,20 @@ html, body {
     bottom: 0;
     width: 50vw;
     height: 20vh;
-    background-color: lightseagreen;
+    background-color: white;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkslategray;
+    border: calc(1vh) solid red;
     box-sizing: border-box;
 }
 
 .vite{
     height: 10vh;
     width: 20vw;
-    background-color: lightsteelblue;
+    background-color: lightpink;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkcyan;
+    border: calc(1vh) solid red;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -164,10 +164,10 @@ html, body {
 .vite-box{
     height: 13.7vh;
     width: 20vw;
-    background-color: lightsteelblue;
+    background-color: lightpink;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkcyan;
+    border: calc(1vh) solid red;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

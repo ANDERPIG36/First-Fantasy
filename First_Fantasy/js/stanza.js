@@ -1,4 +1,5 @@
 const porte = document.querySelectorAll(".porta");
+const bottoni = document.querySelectorAll(".bottone");
 let monologues = [];
 let i=-1;
 
@@ -23,6 +24,9 @@ document.body.addEventListener("click", () => {
         personaggio.classList.add("invisible");
         porte.forEach(porta => {
             porta.style.pointerEvents = "auto";
+        });
+        bottoni.forEach(bottone => {
+            bottone.classList.remove("hidden");
         });
     }
 });
