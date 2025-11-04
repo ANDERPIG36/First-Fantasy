@@ -7,7 +7,7 @@
 
 h1 {
     font-family: 'Pixel', sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     color: white;
     text-align: center;
 }
@@ -19,10 +19,17 @@ h2 {
     text-align: left;
 }
 
-p {
+h3 {
     font-family: 'Pixel', sans-serif;
     font-size: 1.5vw;
-    color: black;
+    color: white;
+    text-align: left;
+}
+
+p {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.7vw;
+    color: lime;
     text-align: center;
 }
 
@@ -51,7 +58,7 @@ html, body {
 
 .pagina {
     height: 100vh;
-    background-image: url("../../img/battle_bg/fight_prigione.png");
+    background-image: url("../../img/battle_bg/fight_informatico_bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -99,11 +106,11 @@ html, body {
 }
 
 .immagine_combattente > * {
-    width: 20vw;
+    width: 16vw;
 }
 
 .combattente_nemico{
-    width: 20vw;
+    width: 15vw;
 }
 
 .GUI{
@@ -139,20 +146,24 @@ html, body {
     bottom: 0;
     width: 50vw;
     height: 20vh;
-    background-color: chocolate;
+    background-color: black;
     background-size: 100% 100%;
     background-position: center;
-    border: 1vh solid brown;
+    border: 1vh solid lime;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .vite{
     height: 10vh;
     width: 20vw;
-    background-color: burlywood;
+    background-color: black;
     background-size: 100% 100%;
     background-position: center;
-    border: 1vh solid chocolate;
+    border: 1vh solid lime;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -164,10 +175,10 @@ html, body {
 .vite-box{
     height: 13.7vh;
     width: 20vw;
-    background-color: burlywood;
+    background-color: lightseagreen;
     background-size: 100% 100%;
     background-position: center;
-    border: 1vh solid chocolate;
+    border: 1vh solid darkcyan;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -205,6 +216,10 @@ html, body {
 
 .button-box{
     height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
 }
 
 .hidden {

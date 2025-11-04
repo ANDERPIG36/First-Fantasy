@@ -1,5 +1,5 @@
 const bottoniMossa = document.querySelectorAll(".bottone_mossa");
-const pulsanteAvanza = document.querySelector(".pulsante");
+const pulsantiAvanza = document.querySelectorAll(".pulsante");
 const combattenteNemico = document.querySelector(".battaglia .combattente:first-child");
 const combattenteGiocatore = document.querySelector(".battaglia .combattente:last-child");
 
@@ -173,7 +173,10 @@ function finePartita() {
     if (i < dialogues.length - 1) {
         document.body.addEventListener("click", mostraDialogoSuccessivo);
     } else {
-        pulsanteAvanza.classList.remove("hidden");
+        
+        pulsantiAvanza.forEach(pulsante => {
+            pulsante.classList.remove("hidden");
+        });
     }
 }
 
@@ -186,7 +189,9 @@ function mostraDialogoSuccessivo(e) {
         i++;
         dialogueText.innerHTML = dialogues[i];
     } else {
-        pulsanteAvanza.classList.remove("hidden");
+        pulsantiAvanza.forEach(pulsante => {
+            pulsante.classList.remove("hidden");
+        });
         textBox.classList.add("button-box");
         document.body.removeEventListener("click", mostraDialogoSuccessivo);
     }

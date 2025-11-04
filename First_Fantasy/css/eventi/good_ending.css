@@ -15,7 +15,7 @@ h1 {
 p {
     font-family: 'Pixel', sans-serif;
     font-size: 1.8vw;
-    color: lightgrey;
+    color: black;
     text-align: center;
 }
 
@@ -29,6 +29,10 @@ a > * {
     grid-area: 1 / 1;
 }
 
+.hidden {
+    display: none;
+}
+
 html{
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -39,93 +43,66 @@ html{
 html, body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-}
-
-.pagina {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     align-items: center;
     gap: 0px;
-}
-
-.stanza {
-    width: 75vw;
-    height: 100vh;
     background-image: url("../../img/bg/stone_bg.png");
     background-size: cover;
     background-position: center;
-    display: grid;
-    place-items: center;
 }
 
-.stanza > * {
-    grid-area: 1 / 1;
+img {
+    width: auto;
+    object-fit: contain;
 }
 
-.GUI {
-    width: 25vw;
+.base_size {
     height: 100vh;
-    background-color: burlywood;
+}
+
+.shrink1 {
+    height: 80vh;
+}
+
+.shrink2 {
+    height: 70vh;
+}
+
+#text-box {
+    background-color: lightpink;
     background-size: 100% 100%;
     background-position: center;
     border: 1vh solid brown;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: space-between;
+    width: 100vw;
 }
 
-.text-box {
+.box1{
+    height: 20vh;
     display: flex;
-    flex-direction: column; 
+    justify-content: center;
     align-items: center;
 }
 
-.personaggio {
+.box2{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-box-showed {
     display: flex;
     flex-direction: row; 
     align-items: center;
-    justify-content: center;
-    width: 16vw;
+    gap:10%;
 }
 
-.primo_piano{
-    height: 32vh;
-    width: 90%;
-    height: auto;
+.img_button{
+    height: 15vh;
 }
-
-.giocatore{
-    height: 32vh;
-}
-
-.button-box {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 2vh;
-}
-
-.bottone > * {
-    width: 12vw;
-}
-
-.porta img {
-    height: 20vh;
-}
-
-.mappa_stanza {
-    height: 100vh;
-}
-
-.hidden {
-    display: none;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-
