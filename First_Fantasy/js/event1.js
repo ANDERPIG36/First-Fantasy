@@ -26,7 +26,7 @@ document.body.addEventListener("click", () => { //Quando clicci sullo schermo av
             img.classList.remove("base_size");
             img.classList.add("shrink1");
             textBox.classList.add("box1");
-            monologueText.textContent = monologues[j];
+            monologueText.innerHTML = monologues[j];
         } else {
             buttonBox.classList.remove("hidden");
             buttonBox.classList.add("button-box-showed");

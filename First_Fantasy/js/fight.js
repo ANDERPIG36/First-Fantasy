@@ -35,16 +35,16 @@ fetch("../../txt/attacchi.json")
 document.body.addEventListener("click", () => {
     if (i < dialoghiIniziali - 1) {
         i++;
-        dialogueText.textContent = dialogues[i];
+        dialogueText.innerHTML = dialogues[i];
     } else if (i === dialoghiIniziali - 1) {
-        dialogueText.textContent = "";
+        dialogueText.innerHTML = "";
         battagliaAttiva = true;
         bottoniMossa.forEach(bottone => {
             bottone.style.pointerEvents = "auto";
         });
     } else if (!battagliaAttiva && i < dialogues.length - 1) {
         i++;
-        dialogueText.textContent = dialogues[i];
+        dialogueText.innerHTML = dialogues[i];
     }
 });
 
@@ -109,35 +109,35 @@ function vincitore(mossaGiocatore, mossaNemico) {
     //arco batte scudo e viene battuto da spada, due archi che si scontrano uno dei due a caso prende danno
     if (mossaGiocatore === "spada"){
         if(mossaNemico === "spada"){
-            dialogueText.textContent = attacchi[0];
+            dialogueText.innerHTML = attacchi[0];
             return "entrambi";
         } else if(mossaNemico === "scudo") {
-            dialogueText.textContent = attacchi[1];
+            dialogueText.innerHTML = attacchi[1];
             return "nemico";
         } else {
-            dialogueText.textContent = attacchi[2];
+            dialogueText.innerHTML = attacchi[2];
             return "giocatore";
         }
     } else if(mossaGiocatore === "scudo") {
         if(mossaNemico === "spada"){
-            dialogueText.textContent = attacchi[3];
+            dialogueText.innerHTML = attacchi[3];
             return "giocatore";
         } else if(mossaNemico === "scudo") {
-            dialogueText.textContent = attacchi[4];
+            dialogueText.innerHTML = attacchi[4];
             return "pareggio";
         } else {
-            dialogueText.textContent = attacchi[5];
+            dialogueText.innerHTML = attacchi[5];
             return "nemico";
         }
     } else {
         if(mossaNemico === "spada"){
-            dialogueText.textContent = attacchi[6];
+            dialogueText.innerHTML = attacchi[6];
             return "nemico";
         } else if(mossaNemico === "scudo") {
-            dialogueText.textContent = attacchi[7];
+            dialogueText.innerHTML = attacchi[7];
             return "giocatore";
         } else {
-            dialogueText.textContent = attacchi[8];
+            dialogueText.innerHTML = attacchi[8];
             return Math.random() < 0.5 ? "nemico" : "giocatore";
         }
     }
@@ -157,7 +157,7 @@ function aggiornaVite(tipo, nuoveVite) {
 
 function finePartita() {
     battagliaAttiva = false;
-    dialogueText.textContent = "Hai vinto!";
+    dialogueText.innerHTML = "Hai vinto!";
     combattenteNemico.classList.add("invisible");
     bottoniMossa.forEach(bottone => {
         bottone.style.pointerEvents = "none";
@@ -167,7 +167,7 @@ function finePartita() {
     i = dialoghiIniziali - 1;
     
     i++;
-    dialogueText.textContent = dialogues[i];
+    dialogueText.innerHTML = dialogues[i];
     
     //se ci sono altri dialoghi aspetta per far apparrire il tasto continua
     if (i < dialogues.length - 1) {
@@ -184,7 +184,7 @@ function mostraDialogoSuccessivo(e) {
     
     if (i < dialogues.length - 1) {
         i++;
-        dialogueText.textContent = dialogues[i];
+        dialogueText.innerHTML = dialogues[i];
     } else {
         pulsanteAvanza.classList.remove("hidden");
         textBox.classList.add("button-box");
@@ -194,7 +194,7 @@ function mostraDialogoSuccessivo(e) {
 
 function sconfittaGiocatore() {
     battagliaAttiva = false;
-    dialogueText.textContent = "Sei morto!";
+    dialogueText.innerHTML = "Sei morto!";
     combattenteGiocatore.classList.add("invisible");
     bottoniMossa.forEach(bottone => {
         bottone.style.pointerEvents = "none";

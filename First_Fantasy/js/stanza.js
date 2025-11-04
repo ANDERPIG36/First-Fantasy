@@ -18,7 +18,7 @@ fetch(jsonPath)
 document.body.addEventListener("click", () => { 
     i++;
     if (i < monologues.length) {
-        monologueText.textContent = monologues[i];
+        monologueText.innerHTML = monologues[i];
     } else {
         personaggio.classList.add("invisible");
         porte.forEach(porta => {
