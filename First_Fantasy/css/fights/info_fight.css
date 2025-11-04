@@ -142,7 +142,7 @@ html, body {
     background-color: black;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid lime;
+    border: 1vh solid lime;
     box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@ html, body {
     background-color: lightgreen;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid lime;
+    border: 1vh solid lime;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -167,7 +167,7 @@ html, body {
     background-color: lemonchiffon;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid lime;
+    border: 1vh solid lime;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

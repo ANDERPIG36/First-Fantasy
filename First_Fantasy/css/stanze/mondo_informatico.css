@@ -69,7 +69,7 @@ html, body {
     background-color: black;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid lime;
+    border: 1vh solid lime;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 

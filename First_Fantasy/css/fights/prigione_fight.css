@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../../asset/fonts/Pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    text-align: left;
+}
+
+p {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+a > * {
+    grid-area: 1 / 1;
+}
+
+html{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pagina {
+    height: 100vh;
+    background-image: url("../../img/battle_bg/fight_prigione.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 0px;
+}
+
+.salta-box{
+    padding: 1vw;
+    margin: 1vw;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.pulsante_salta {
+    height: 8vh;
+}
+
+.immagine_bottone_salta {
+    height: 8vh;
+}
+
+.battaglia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+}
+
+.combattente {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.immagine_combattente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.immagine_combattente > * {
+    width: 20vw;
+}
+
+.combattente_nemico{
+    width: 20vw;
+}
+
+.GUI{
+    width: 50vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangolo_mosse{
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 25vw;
+    height: 50vh;
+    align-self: center;
+    background-image: url("../../img/GUI/triangolo_mosse.png");
+    background-size: 100% 100%;
+    background-position: center;
+    display: grid;
+    grid-template-areas:
+        ". spada ."
+        "scudo . arco";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.text-box{
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    height: 20vh;
+    background-color: chocolate;
+    background-size: 100% 100%;
+    background-position: center;
+    border: 1vh solid brown;
+    box-sizing: border-box;
+}
+
+.vite{
+    height: 10vh;
+    width: 20vw;
+    background-color: burlywood;
+    background-size: 100% 100%;
+    background-position: center;
+    border: 1vh solid chocolate;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.vite-box{
+    height: 13.7vh;
+    width: 20vw;
+    background-color: lightsteelblue;
+    background-size: 100% 100%;
+    background-position: center;
+    border: 1vh solid darkcyan;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.vita{
+    width: 2.5vw;
+}
+
+.triangolo_mosse .spada {
+    grid-area: spada;
+}
+
+.triangolo_mosse .scudo {
+    grid-area: scudo;
+}
+
+.triangolo_mosse .arco {
+    grid-area: arco;
+}
+
+.azione{
+    width: 5vw;
+}
+
+.bottone_mossa {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-box{
+    height: 30vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-box_button{
+    height: 30vh;
+}

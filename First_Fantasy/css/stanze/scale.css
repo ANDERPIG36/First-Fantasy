@@ -69,7 +69,7 @@ html, body {
     background-color: goldenrod;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid sienna;
+    border: 1vh solid sienna;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 

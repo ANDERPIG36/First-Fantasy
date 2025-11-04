@@ -142,7 +142,7 @@ html, body {
     background-color: lightseagreen;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkslategray;
+    border: 1vh solid darkslategray;
     box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@ html, body {
     background-color: lightsteelblue;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkcyan;
+    border: 1vh solid darkcyan;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -167,7 +167,7 @@ html, body {
     background-color: lightsteelblue;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid darkcyan;
+    border: 1vh solid darkcyan;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy - prigione</title>
+        <link rel="stylesheet" href="../../css/stanze/prigione.css">
+        <style>
+            #porte_prigione1{
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+            }
+            #oggetti_stanza_prigione1{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 38vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina_prigione1" class="pagina">
+            <div id="stanza_prigione1" class="stanza">
+                
+                <img src="../../img/maps/mappa_prigione1.png" class="mappa_stanza">
+
+                <div id="oggetti_stanza_prigione1" class="oggetti_stanza">
+
+                    <div id="porte_prigione1">
+                        <a href="fight_prigione3.html" class="porta">
+                            <img src="../../img/decorations/porta_prigione1.png">
+                        </a>
+                    </div>
+
+                    <img id="giocatore_prigione1" src="../../img/characters/eroe/eroe_dietro.png" class="giocatore">
+
+                </div>
+
+            </div>
+
+            <div id="GUI_prigione1" class="GUI">
+                    
+                <div id="text-box_prigione1" class="text-box">
+
+                    <p id="prigione1_text"></p>
+
+                </div>
+
+                <div id="personaggio_prigione1" class="personaggio">
+                    <img src="../../img/characters/faces/hero_face.png" class="primo_piano">
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            const personaggio = document.getElementById("giocatore_prigione1");
+            const monologueText = document.getElementById("prigione1_text");
+            const jsonPath = "../../txt/prigione/prigione1.json";
+        </script>
+        <script src="../../js/stanza.js"></script>
+    </body>
+</html>
+

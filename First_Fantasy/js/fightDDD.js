@@ -71,10 +71,10 @@ function eseguiMossa(mossaGiocatore) {
     const risultato = vincitore(mossaGiocatore, mossaNemico);
     
     if (risultato === "giocatore") {
-        viteNemico--;
-        aggiornaVite("nemico", viteNemico);
+        viteInizialiNemico--;
         
-        if (viteNemico === 0) {
+        if (viteInizialiNemico === 0) {
+            aggiornaVite("nemico", 0);
             finePartita();
         }
     } else if (risultato === "nemico") {
@@ -93,12 +93,11 @@ function eseguiMossa(mossaGiocatore) {
             return;
         }
 
-        viteNemico--;
-        aggiornaVite("nemico", viteNemico);
+        viteInizialiNemico--;
         
-        if (viteNemico === 0) {
+        if (viteInizialiNemico === 0) {
+            aggiornaVite("nemico", 0);
             finePartita();
-            return;
         }
     }
 }
@@ -200,9 +199,9 @@ function sconfittaGiocatore() {
         bottone.style.pointerEvents = "none";
     });
 
-    document.body.addEventListener("click", paginaMorte);
+    document.body.addEventListener("click", finaleEroe);
 }
 
-function paginaMorte() {
-    window.location.href = "../../html/morte.html";
+function finaleEroe() {
+    window.location.href = "../../html/endings/hero_ending.html";
 }

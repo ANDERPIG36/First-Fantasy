@@ -136,7 +136,7 @@ html, body {
     background-color: firebrick;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid maroon;
+    border: 1vh solid maroon;
     box-sizing: border-box;
 }
 
@@ -146,7 +146,7 @@ html, body {
     background-color: lemonchiffon;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid crimson;
+    border: 1vh solid crimson;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -161,7 +161,7 @@ html, body {
     background-color: lemonchiffon;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid crimson;
+    border: 1vh solid crimson;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

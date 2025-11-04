@@ -6,7 +6,23 @@
         <link rel="stylesheet" href="../../css/fights/DDD_fight.css">
         <style>
             #img_scale{
-                width: 12vw;
+                width: 15vw;
+            }
+
+            #vita1_nemico{
+                width: 5vw;
+            }
+
+            #img_DDD{
+                position: absolute;
+                top: 2vh;
+                left: 2vw;
+                width: 25vw;
+                z-index: 1; /* immagine dietro */
+            }
+
+            #nome_DDD{
+                z-index: 2; /* immagine dietro */
             }
         </style>
     </head>
@@ -25,94 +41,13 @@
                 
                 <div class="combattente">
 
-                    <div class="immagine_combattente">
-                        <img src="../../img/characters/bosses/blood_mage.png" id="img_scale">
-                        <p>Dio Del Dungeon</p>
-                    </div>
+                    <img src="../../img/characters/bosses/DDD.png" id="img_DDD">
 
-                    <div class="vite-box">
+                    <img src="../../img/characters/bosses/DDD.png" id="img_scale" class="invisible">
 
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita1_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita2_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita3_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita4_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita5_nemico">
-                        </div>
+                    <h3 id="nome_DDD">Dio Del Dungeon</h3>
 
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita6_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita7_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita8_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita9_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita10_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita11_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita12_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita13_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita14_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita15_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita16_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita17_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita18_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita19_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita20_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita21_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita22_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita23_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita24_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita25_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita26_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita27_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita28_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita29_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita30_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita31_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita32_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita33_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita34_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita35_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita36_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita37_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita38_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita39_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita40_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita41_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita42_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita43_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita44_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita45_nemico">
-                        </div>
-
-                        <div class="fila_vite">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita46_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita47_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita48_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita49_nemico">
-                            <img src="../../img/GUI/vita.png" class="vita" id="vita50_nemico">
-                        </div>
-                        
-                    </div>
+                    <img src="../../img/GUI/vita.png" class="vita" id="vita1_nemico">
 
                 </div>
 
@@ -135,8 +70,8 @@
                     <div id="textbox" class="text-box">
                         <p id="testo"></p>
                         <div class="button-box">
-                            <a href="scale2.html" class="pulsante hidden">
-                                <img src="../../img/buttons/bottone_rosso.png" class="immagine_bottone">
+                            <a href="../endings/god_ending.html" class="pulsante hidden">
+                                <img src="../../img/buttons/bottone_giallo.png" class="immagine_bottone">
                                 <h1>AVANZA</h1>
                             </a>
                         </div>
@@ -148,7 +83,7 @@
 
                     <div class="immagine_combattente">
                         <img src="../../img/characters/eroe/eroe_battaglia.png">
-                        <p>Zani2</p>
+                        <h3>Edric Thorne</h3>
                     </div>
 
                     <div class="vite">
@@ -164,10 +99,10 @@
         <script>
             const dialogueText = document.getElementById("testo");
             const textBox = document.getElementById("textbox");
-            const jsonPath = "../../txt/scale/scale_fight.json";
-            const dialoghiIniziali = 14;
+            const jsonPath = "../../txt/scale/DDD_fight.json";
+            const dialoghiIniziali = 9;
             const viteInizialiGiocatore = 1;
-            const viteInizialiNemico = 50;
+            const viteInizialiNemico = 100;
         </script>
 
         <script src="../../js/fightDDD.js"></script>

@@ -8,7 +8,7 @@
 h1 {
     font-family: 'Pixel', sans-serif;
     font-size: 1.8vw;
-    color: white;
+    color: burlywood;
     text-align: center;
 }
 
@@ -23,6 +23,13 @@ p {
     font-family: 'Pixel', sans-serif;
     font-size: 1.8vw;
     color: black;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.8vw;
+    color: white;
     text-align: center;
 }
 
@@ -98,11 +105,7 @@ html, body {
     align-items: center;
 }
 
-.immagine_combattente > * {
-    width: 20vw;
-}
-
-.combattente_nemico{
+.immagine_combattente img {
     width: 12vw;
 }
 
@@ -139,20 +142,20 @@ html, body {
     bottom: 0;
     width: 50vw;
     height: 20vh;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid red;
+    border: 1vh solid goldenrod;
     box-sizing: border-box;
 }
 
 .vite{
     height: 10vh;
-    width: 20vw;
-    background-color: lightpink;
+    width: 5vw;
+    background-color: lightgoldenrodyellow;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid red;
+    border: 1vh solid goldenrod;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -164,10 +167,10 @@ html, body {
 .vite-box{
     height: 13.7vh;
     width: 20vw;
-    background-color: lightpink;
+    background-color: lightgoldenrodyellow;
     background-size: 100% 100%;
     background-position: center;
-    border: calc(1vh) solid red;
+    border: 1vh solid goldenrod;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -177,7 +180,7 @@ html, body {
 }
 
 .vita{
-    width: 2.5vw;
+    width: 0.5vw;
 }
 
 .triangolo_mosse .spada {
