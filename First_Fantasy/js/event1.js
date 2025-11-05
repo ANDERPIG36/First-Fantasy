@@ -17,7 +17,10 @@ fetch(jsonPath)
     });
 
 //funzione che scorre le immagini al click, una volta finite scorre i testi, una volta finiti mostra i pulsanti
-document.body.addEventListener("click", () => { 
+document.body.addEventListener("click", () => {
+    
+    i++;
+
     if (i < immagini.length) {
         img.src = immagini[i];
     } else {

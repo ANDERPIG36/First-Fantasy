@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Fantasy</title>
+        <link rel="stylesheet" href="../../css/eventi/info_ending.css">
+    </head>
+    <body>
+        <img id="img" src="../../img/endings/dig_dug/dig_dug_ending1.png" class="base_size">
+
+        <div id="text-box" class="hidden">
+            <p id="monologue_text"></p>
+
+            <div id="button-box" class="hidden">
+                <a href="../start.html">
+                    <img src="../../img/buttons/bottone_verde.png" class="menu-button">
+                    <h1>GIOCA ANCORA</h1>
+                </a>
+
+                <a href="https://www.retrogames.cz/play_012-NES.php" target="_blank">
+                    <img src="../../img/buttons/bottone_giallo.png" class="menu-button">
+                    <h1>SCAVA</h1>
+                </a>
+
+                <a href="https://dig_dug.com/ANDERPIG36/First-Fantasy" target="_blank">
+                    <img src="../../img/buttons/bottone_blu.png" class="menu-button">
+                    <h1>CREDITI</h1>
+                </a>
+            </div>
+
+        </div>
+
+        <script>
+            const immagini = [
+                "../../img/endings/dig_dug/dig_dug_ending1.png",
+                "../../img/endings/dig_dug/dig_dug_ending2.png",
+                "../../img/endings/dig_dug/dig_dug_ending3.png",
+            ];
+            const jsonPath = "../../txt/endings/dig_dug_ending.json";
+        </script>
+        <script src="../../js/event1.js"></script>
+    </body>
+</html>
