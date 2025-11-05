@@ -10,10 +10,12 @@ let battagliaAttiva = false;
 let viteGiocatore = viteInizialiGiocatore;
 let viteNemico = viteInizialiNemico;
 
+//rende non clicabili i bottoni
 bottoniMossa.forEach(bottone => {
     bottone.style.pointerEvents = "none";
 });
 
+//caricamento testi dialoghi
 fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
@@ -23,6 +25,7 @@ fetch(jsonPath)
         console.error('Errore nel caricamento dei testi', error);
     });
 
+//caricamento testi attacchi
 fetch("../../txt/attacchi.json")
     .then(response => response.json())
     .then(data => {
@@ -32,6 +35,7 @@ fetch("../../txt/attacchi.json")
         console.error('Errore nel caricamento dei testi', error);
     });
 
+//quando clicchi scorre i dialoghi(se presenti) altrimenti riattiva i bottoni
 document.body.addEventListener("click", () => {
     if (i < dialoghiIniziali - 1) {
         i++;
@@ -39,7 +43,7 @@ document.body.addEventListener("click", () => {
     } else if (i === dialoghiIniziali - 1) {
         dialogueText.innerHTML = "";
         battagliaAttiva = true;
-        bottoniMossa.forEach(bottone => {
+        bottoniMossa.forEach(bottone => { //riattiva i bottoni
             bottone.style.pointerEvents = "auto";
         });
     } else if (!battagliaAttiva && i < dialogues.length - 1) {
@@ -48,8 +52,10 @@ document.body.addEventListener("click", () => {
     }
 });
 
+//Quando uno dei bottoni degli attacchi viene premuto esegue quella mossa
+
 document.querySelector(".spada").addEventListener("click", (e) => {
-    e.stopPropagation();
+    e.stopPropagation();//ferma il click per evitare conflitti o input multipli
     eseguiMossa("spada");
 });
 
@@ -63,13 +69,17 @@ document.querySelector(".arco").addEventListener("click", (e) => {
     eseguiMossa("arco");
 });
 
+
+//funzione del turno
 function eseguiMossa(mossaGiocatore) {
-    if (!battagliaAttiva) return;
+    if (!battagliaAttiva) return; //se la battaglia non è incorso interrompe la funzione
     
     const mosse = ["spada", "scudo", "arco"];
-    const mossaNemico = mosse[Math.floor(Math.random() * mosse.length)];
-    const risultato = vincitore(mossaGiocatore, mossaNemico);
+    const mossaNemico = mosse[Math.floor(Math.random() * mosse.length)]; //genera la mossa del nemico
+    const risultato = vincitore(mossaGiocatore, mossaNemico);   //richiama la funzione per determinare il vincitore
     
+    //controlla il vincitore e abbassa la vita al perdente, controllando se le avesse finite
+
     if (risultato === "giocatore") {
         viteNemico--;
         aggiornaVite("nemico", viteNemico);
@@ -155,10 +165,13 @@ function aggiornaVite(tipo, nuoveVite) {
     }
 }
 
+//funzione di vittoria
 function finePartita() {
     battagliaAttiva = false;
     dialogueText.innerHTML = "Hai vinto!";
-    combattenteNemico.classList.add("invisible");
+    combattenteNemico.classList.add("invisible"); //nasconde il nemico
+    
+    //rende non premibili le mosse
     bottoniMossa.forEach(bottone => {
         bottone.style.pointerEvents = "none";
     });
@@ -174,13 +187,17 @@ function finePartita() {
         document.body.addEventListener("click", mostraDialogoSuccessivo);
     } else {
         
-        pulsantiAvanza.forEach(pulsante => {
+        pulsantiAvanza.forEach(pulsante => {//fa apparire i pulsanti
             pulsante.classList.remove("hidden");
         });
+
     }
 }
 
+//funzione che scorre i dialoghi
 function mostraDialogoSuccessivo(e) {
+    
+    //non fa scorrere i dialoghi se stai premendo altro
     if (e.target.closest('.bottone_mossa') || e.target.closest('.pulsante')) {
         return;
     }
@@ -189,7 +206,7 @@ function mostraDialogoSuccessivo(e) {
         i++;
         dialogueText.innerHTML = dialogues[i];
     } else {
-        pulsantiAvanza.forEach(pulsante => {
+        pulsantiAvanza.forEach(pulsante => {//fa apparire i pulsanti
             pulsante.classList.remove("hidden");
         });
         textBox.classList.add("button-box");
@@ -197,17 +214,20 @@ function mostraDialogoSuccessivo(e) {
     }
 }
 
+//funzione di sconfitta
 function sconfittaGiocatore() {
     battagliaAttiva = false;
     dialogueText.innerHTML = "Sei morto!";
-    combattenteGiocatore.classList.add("invisible");
-    bottoniMossa.forEach(bottone => {
+    combattenteGiocatore.classList.add("invisible");//fa sparire il giocatore
+    
+    bottoniMossa.forEach(bottone => { //rende non cliccabili i bottoni delle mosse
         bottone.style.pointerEvents = "none";
     });
 
-    document.body.addEventListener("click", paginaMorte);
+    document.body.addEventListener("click", paginaMorte); //fa si che dal prossimo click avvi la funzione pagina morte
 }
 
+//manda alla pagina di morte del gioco
 function paginaMorte() {
     window.location.href = "../../html/morte.html";
 }

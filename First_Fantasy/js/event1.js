@@ -6,6 +6,7 @@ const textBox = document.getElementById("text-box");
 const buttonBox = document.getElementById("button-box");
 const monologueText = document.getElementById("monologue_text");
 
+//caricamento testi
 fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
@@ -15,8 +16,8 @@ fetch(jsonPath)
         console.error('Errore nel caricamento dei testi', error);
     });
 
-document.body.addEventListener("click", () => { //Quando clicci sullo schermo avvia una funzione "monouso" creata sul momento che porta al avanzamento delle immagini e smette di esistere appena finisce la funzione
-    i++;
+//funzione che scorre le immagini al click, una volta finite scorre i testi, una volta finiti mostra i pulsanti
+document.body.addEventListener("click", () => { 
     if (i < immagini.length) {
         img.src = immagini[i];
     } else {
@@ -24,9 +25,9 @@ document.body.addEventListener("click", () => { //Quando clicci sullo schermo av
         if (j < monologues.length) {
             textBox.classList.remove("hidden");
             img.classList.remove("base_size");
-            img.classList.add("shrink1");
+            img.classList.add("shrink1");//cambia grandezza imagini e contenitori in base alla presenza o meno di pulsanti
             textBox.classList.add("box1");
-            monologueText.innerHTML = monologues[j];
+            monologueText.innerHTML = monologues[j];//innerHTML permette di mettere tag come il corsivo
         } else {
             buttonBox.classList.remove("hidden");
             buttonBox.classList.add("button-box-showed");
