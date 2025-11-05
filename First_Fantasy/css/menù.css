@@ -55,3 +55,7 @@ body.menu-bg {
 .button > * {
   grid-area: 1 / 1;
 }
+
+.titolo{
+  height: 25vh;
+}
